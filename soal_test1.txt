@@ -1,0 +1,103 @@
+
+
+Isilah data pribadi : 
+
+Nama : Adiya Wildan Fadhilla
+Alamat Email: adityawildanfadhilla@gmail.com
+Waktu Mulai : 09.30
+Waktu Selesai : 11:30
+
+CARA PENGERJAAN!!!
+
+buatlah file baru sesuai dengan number PERTANYAAN
+
+contoh: test_soal1.java
+
+untuk jawaban query silahkan buat file dengan format jawaban_test_query.txt
+
+PERTANYAAN !!
+
+1. Kami mempunyai data array dengan nama variable  data : 
+
+    var data = [1, 2, 4, 3, 10, 11, 20, 5, 100, 200];
+
+    - buatlah program FizzBuzz dengan looping: 
+        - Jika angka yang keluar adalah angka 5 maka output yang di hasilkan adalah "Fizz"
+        - Jika angka yang keluar adalah angka 11 maka output yang di hasilkan adalah "Buzz"
+        - Jika angka yang keluar adalah 5 dan 11 maka output yang di hasilkan adalah "FizzBuzz"
+
+	<?php  
+		/* fizz Buzz Array */
+		echo "|| Fizz Buzz Array || ->";
+		$data = array(1, 2, 4, 3, 10, 11, 20, 5, 100, 200, -1);
+		$num = 3;
+		while($num)
+		{
+			$arrbegin = 0;
+			while($data[$arrbegin] != -1)
+			{
+				$cond = $data[$arrbegin];
+				if($cond == 5){
+					echo $data[$arrbegin];
+					echo " = fizz\n";		
+				}else if($cond == 11)
+			{
+				echo $data[$arrbegin];
+				echo " = buzz\n";
+			}else if($cond == 11 & $cond == 5) // ;(
+			{			
+				echo $data[$arrbegin];
+				echo " = fizzbuzz\n";
+			}
+			$arrbegin++;
+		}
+		$num--;
+	?>
+	
+
+2. Buatlah program untuk pengecekan tipe data:
+
+    var data = [1, "ka", 67, "wah", "1772", "edukasi", 7, 98, -1];
+
+    hasil yang di inginkan: 
+    - index ke 0 adalah integer dengan data 1
+    - index ke 1 adalah string dengan data kawah
+    - dan jika nilai dari index itu kurang dari  0 maka keluarkan output:  Tidak bisa di validasi sistem
+
+    contoh : 
+    var contoh = [1, "mantap", 0 ];
+    expektasi output: 
+    - index ke 0 adalah integer dengan data 1
+    - index ke 1 adalah string dengan data mantap
+    - index ke 2 Tidak bisa di validasi sistem
+
+    buatlah programnya sampai semua data tervalidasi
+
+	<?php  
+
+		/* Pengecekan tipe data */
+		echo "|| Pengecekan tipe data || ->";
+		$data = array(1, "ka", 67, "wah", "1772", "edukasi", 7, 98, -1);
+		$arrbegin = 0;
+		while(1){
+			$op = $data[$arrbegin];
+			if($op == -1)
+				break;
+			if($arrbegin == 1)
+				echo "kawah";
+			else
+			echo $op; echo "  ";
+			$arrbegin++;
+		}
+	
+	?>
+
+
+3. buatlah program query yang sudah di sediakan import query kedalam  db untuk melihat data table 
+
+    - buatlah query untuk menampilkan peserta dengan gaji tertinggi
+    - buatlah query untuk menampilkan peserta BACKEND dengan nilai tertinggi dan gaji tertinggi
+    - buatlah query untuk melihat total peserta yang berada dalam kelas frontend
+    - buatlah query untuk menampilkan jumlah kehadiran tertinggi dan nilai tertinggi dalam kelas frontend
+
+	(Mohon Maaf aku belum belajar query database)
